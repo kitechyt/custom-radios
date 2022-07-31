@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Radio Buttons</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form>
+        <fieldset class="radio-question-multiple">
+            <legend>How many countries are there in the world?</legend>
+            <details class="helptext-container">
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330">
+                        <path d="M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z"/>
+                    </svg>
+                        <span>Need a clue?</span>
+                </summary>
+                <div class="helptext-content">
+                    If someone were to say that there are less than 200 countries in the world, they would be correct.
+                </div>
+            </details>
+            <div class="radio-container">
+                <input id="countries-1" type="radio" name="countries">
+                <label for="countries-1">117</label>
+            </div>
+            <div class="radio-container">
+                <input id="countries-2" type="radio" name="countries">
+                <label for="countries-2">195</label>
+            </div>
+            <div class="radio-container">
+                <input id="countries-3" type="radio" name="countries">
+                <label for="countries-3">236</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="radio-question-binary">
+            <legend>There are seven continents in the world?</legend>
+            <details class="helptext-container">
+                <summary>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 330">
+                        <path d="M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z"/>
+                    </svg>
+                        <span>Need some help?</span>
+                </summary>
+                <div class="helptext-content">
+                    It's true!
+                </div>
+            </details>
+            <div class="binary-radio-container">
+                <div class="radio-container">
+                    <input id="continents-true" type="radio" name="continents">
+                    <label for="continents-true">True</label>
+                </div>
+                <div class="radio-container">
+                    <input id="continents-false" type="radio" name="continents">
+                    <label for="continents-false">False</label>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
